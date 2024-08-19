@@ -32,6 +32,10 @@ for (let i = 0; i < 1000; i++) {
 
 // Routes
 
+app.get('/',(req,res)=>{
+  return res.send('hello world!!!!');
+});
+
 // Get all employees with pagination and filtering
 app.get('/api/employees', (req, res) => {
   let result = [...employees];
